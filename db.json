@@ -1,4 +1,8 @@
 {
-    "city": "Moscow",
-    "month": "February"
+    "data": [
+        {
+            "city": "Moscow",
+            "month": "February"
+        }
+    ]
 }
