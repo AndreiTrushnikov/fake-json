@@ -1,138 +1,21 @@
 {
-    "data": [
+    "newCards": [
         {
-            "city": "Moscow",
-            "month": "February"
-        }
-    ],
-    "autorization" : {
-        "modal" : "<div class='modal fade' tabindex='-1' role='dialog'><div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'><div class='modal-content'><div class='modal-header'><h5 class='modal-title' id='exampleModalLabel'>Вход в систему</h5><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'><span class='icons icons--cross'></span></span></button></div><div class='modal-body'>...</div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button><button type='button' class='btn btn-primary'>Save changes</button></div></div></div></div>"
-    },
-    "registration" : {
-        "modal" : "<div class='modal fade'><div class='modal-dialog modal-lg modal-registration'><div class='modal-content'><div class='modal-header'>                  <button type='button' class='close' data-dismiss='modal' aria-label='Close'>                      <span aria-hidden='true'><span class='icons icons--cross'></span></span>                  </button>              </div>              <h5 class='modal-title'>Регистрация в системе</h5>              <div class='modal-body pl-4 pl-sm-5 pr-4 pr-sm-5 pb-4 pb-sm-5'>                  <form action='' class='modal_registration__FORM' method='POST' role='form'>                      <div class='registration-fields'>                          <div class='registration-fields__flags mb-1'>                              <label>                                  <input type='hidden' name='' value='1'>                                  <input type='radio' class='registration-flag ' name='modal_registration__COUNTRY' value='Россия' id='Russia' checked>                                  <img src='/local/templates/main/images/flag-russia.svg' alt='Флаг России'>                              </label>                              <label>                                  <input type='hidden' name='' value='3145'>                                  <input type='radio' class='registration-flag ' name='modal_registration__COUNTRY' value='Беларусь' id='Belarus'>                                  <img src='/local/templates/main/images/flag-belarus.svg' alt='Флаг Беларуси'>                              </label>                              <label>                                  <input type='hidden' name='' value='3152'>                                  <input type='radio' class='registration-flag ' name='modal_registration__COUNTRY' value='Казахстан' id='Kazakhstan'>                                  <img src='/local/templates/main/images/flag-kazakhstan.svg' alt='Флаг Казахстана'>                              </label>                          </div>                          <div class='registration-fields__name-input'>                              <input type='text' class='' name='modal_registration__NAME' placeholder='Имя' required maxlength='50'>                          </div>                          <div class='registration-fields__email-input'>                              <input type='text' class='validation-email' name='modal_registration__EMAIL' placeholder='E-mail' id='reg-email' required maxlength='50'>                          </div>                          <div class='registration-fields__phone-input d-flex'>                              <input type='text' class='registration-fields__phone-input-self validation-phone' name='modal_registration__PHONE' placeholder='Номер телефона' required>                              <input type='text' class='registration-fields__added-phone-input validation-add-phone' name='modal_registration__ADD_PHONE' placeholder='Доб.'>                          </div>                          <div class='registration-fields__supplier'>                              <input value='6' id='ModalRegistration-User-group' autocomplete='off' type='checkbox' name='modal_registration__IS_SUPPLIER'>                              <label for='ModalRegistration-User-group' class=''>Я поставщик</label>                          </div>                          <div class='registration-fields__captcha'>                              <div class='form-group'>                                  <script src='www.google.com/recaptcha/api.js' async defer></script>                                  <div class='g-recaptcha ml-auto' style='transform: scale(0.94); transform-origin: left top;' data-sitekey='6LdAEuoUAAAAAGAxM7oMsUpuUkZwIdp092We2JKe'></div>                              </div>                          </div>                          <button type='submit' class='co-btn co-btn--auto-width registration-fields__btn' id='modal_registration__BTN'>Зарегистрироваться</button>                          <div class='registration-fields__policy'>                              <p>Нажимая кнопку 'Зарегистрироваться', вы соглашаетесь с <a href='/oferta/' target='_blank'>офертой</a> и <a href='/politika-konfidentsialnosti/' target='_blank'>политикой обработки данных</a>.</p>                          </div>                      </div>                  </form>              </div>        </div>    </div></div>"
-    },
-    "choose_city" : {
-        "modal" : "<div class='modal fade' tabindex='-1' role='dialog'><div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'><div class='modal-content'><div class='modal-header'><h5 class='modal-title' id='exampleModalLabel'>Выбрать город</h5><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'><span class='icons icons--cross'></span></span></button></div><div class='modal-body'>...</div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button><button type='button' class='btn btn-primary'>Сохранить</button></div></div></div></div>"
-    },
-    "response": {
-            "filter__brand": {
-                "0" : {
-                    "name": "Бренд 1",
-                    "id"  : "01"
-                },
-                "1" : {
-                    "name": "Бренд 2",
-                    "id"  : "02"
-                }
-            },
-            "filter__couplings_type": {
-                "0" : {
-                    "name": "Тип 1",
-                    "id"  : "01"
-                },
-                "1" : {
-                    "name": "Тип 2",
-                    "id"  : "02"
-                }
-            },
-            "filter__veins_numbers": {
-                "0" : {
-                    "name": "Жила 1",
-                    "id"  : "01"
-                },
-                "1" : {
-                    "name": "Жила 2",
-                    "id"  : "02"
-                }
-            },
-            "filter__voltage": {
-                "0" : {
-                    "name": "Вольтаж 1",
-                    "id"  : "01"
-                },
-                "1" : {
-                    "name": "Вольтаж 2",
-                    "id"  : "02"
-                }
-            },
-            "filter__elements_type": {
-                "0" : {
-                    "name": "Тип элемента 1",
-                    "id"  : "01"
-                },
-                "1" : {
-                    "name": "Тип элемента 2",
-                    "id"  : "02"
-                }
-            },
-            "filter__section": {
-                "0" : {
-                    "name": "Секция 1",
-                    "id"  : "01"
-                },
-                "1" : {
-                    "name": "Секция 2",
-                    "id"  : "02"
-                }
-            },
-            "filter__insulation": {
-                "0" : {
-                    "name": "Изоляция 1",
-                    "id"  : "01"
-                },
-                "1" : {
-                    "name": "Изоляция 2",
-                    "id"  : "02"
-                }
-            },
-            "filter__instalation_type": {
-                "0" : {
-                    "name": "Тип установки 1",
-                    "id"  : "01"
-                },
-                "1" : {
-                    "name": "Тип установки 2",
-                    "id"  : "02"
-                }
-            },
-            "filter__cable_type": {
-                "0" : {
-                    "name": "Тип кабеля 1",
-                    "id"  : "01"
-                },
-                "1" : {
-                    "name": "Тип кабеля 2",
-                    "id"  : "02"
-                }
-            },
-            "filter__features": {
-                "0" : {
-                    "name": "Особенность 1",
-                    "id"  : "01"
-                },
-                "1" : {
-                    "name": "Особенность 2",
-                    "id"  : "02"
-                }
-            }
-    },
-    "newCard": {
-        "0" : {
             "src" : "/img/portfolio/1.jpg",
             "master" : "Мастер / Лера Аспид Очень Длинные Фамилия Имя Лера Аспид Очень Длинные Фамилия Имя",
             "work" : "Туннели"
         },
-        "1" : {
+        {
             "src" : "/img/portfolio/2.jpg",
             "master" : "Мастер / Миша Аспид Очень Длинные Фамилия Имя Лера Аспид Очень Длинные Фамилия Имя",
             "work" : "Микродермалы"
         },
-        "2" : {
+        {
             "src" : "/img/portfolio/3.jpg",
             "master" : "Мастер / Катя Аспид Очень Длинные Фамилия Имя Лера Аспид Очень Длинные Фамилия Имя",
             "work" : "Туннели и проколы"
         }
-    }
+    ]
 }
 
 
